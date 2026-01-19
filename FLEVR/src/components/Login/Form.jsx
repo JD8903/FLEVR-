@@ -1,37 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Form.css";
+import Grid from "./Grid";
 
 const Form = () => {
+  const [isRegister, setIsRegister] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(isRegister ? "Register" : "Login");
+  };
+
   return (
-    <div className="container">
-      <form>
-        <h1>Login</h1>
+    <div className="page">
+      {/* LEFT FORM */}
+      <div className="form-box">
+        <h2>{isRegister ? "Register" : "Login"}</h2>
 
-        <div className="input-box">
-          <input type="text" placeholder="Username" required />
-        </div>
+        <form onSubmit={handleSubmit}>
+          {isRegister && (
+            <input type="text" placeholder="Username" required />
+          )}
 
-        <div className="input-box">
+          <input type="email" placeholder="Email" required />
           <input type="password" placeholder="Password" required />
-        </div>
+          <button type="submit">
+            {isRegister ? "Register" : "Login"}
+          </button>
+        </form>
+        <p>
+          {isRegister ? "Already have an account?" : "Don't have an account?"}
+          <span onClick={() => setIsRegister(!isRegister)}>
+            {isRegister ? " Login" : " Register"}
+          </span>
+        </p>
+      </div>
 
-        <div className="remember-forgot">
-          <label>
-            <input type="checkbox" /> Remember me
-          </label>
-          <a href="#">Forgot password?</a>
-        </div>
-
-        <button type="submit" className="btn">
-          Log in
-        </button>
-
-        <div className="register-link">
-          <p>
-            Don't have an account? <a href="#">Register Here!</a>
-          </p>
-        </div>
-      </form>
+      {/* RIGHT FIXED GRID */}
+      <Grid />
     </div>
   );
 };

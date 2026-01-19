@@ -1,0 +1,14 @@
+.right-grid {
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  width: 30vw;
+  height: 100vh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transition: background-image 1s ease-in-out;
+}
