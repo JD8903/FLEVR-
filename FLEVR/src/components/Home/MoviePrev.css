@@ -1,0 +1,23 @@
+*::-webkit-scrollbar{
+    display: none;
+}
+.Movies {
+  margin-left: 100px;
+  background: #0f0c16;
+  color: white;
+  padding-top: 5%;
+}
+
+.hide-scrollbar::-webkit-scrollbar{
+    display: none;
+}
+.Movies img {
+  transition: transform 0.3s ease;
+}
+.Movies img:hover {
+  transform: scale(1.05);
+}
+
+h5{
+    padding-right: 30px;
+}

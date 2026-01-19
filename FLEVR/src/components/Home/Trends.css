@@ -1,0 +1,28 @@
+*::-webkit-scrollbar{
+    display: none;
+}
+.trends {
+  margin-left: 100px;
+  background: #0f0c16;
+  color: white;
+  padding-top: 5%;
+}
+
+.text-stroke-white{
+    -webkit-text-stroke: 2px white;
+    color: #100d17;
+}
+
+.hide-scrollbar::-webkit-scrollbar{
+    display: none;
+}
+.trends img {
+  transition: transform 0.3s ease;
+}
+.trends img:hover {
+  transform: scale(1.05);
+}
+
+h5{
+    padding-right: 30px;
+}
