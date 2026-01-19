@@ -70,4 +70,4 @@ const TvPrev = () => {
   )
 }
 
-export default TvPrev
+export default MoviesPrev
