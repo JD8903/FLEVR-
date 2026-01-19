@@ -1,0 +1,24 @@
+*::-webkit-scrollbar{
+    display: none;
+}
+.Tv {
+  margin-left: 100px;
+  background: #0f0c16;
+  color: white;
+  padding-top: 5%;
+  margin-bottom: 40px;
+}
+
+.hide-scrollbar::-webkit-scrollbar{
+    display: none;
+}
+.Tv img {
+  transition: transform 0.3s ease;
+}
+.Tv img:hover {
+  transform: scale(1.05);
+}
+
+h5{
+    padding-right: 30px;
+}
