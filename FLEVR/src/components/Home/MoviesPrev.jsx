@@ -57,11 +57,11 @@ const MoviesPrev = () => {
         <div className="flex items-end gap-10 overflow-x-scroll overflow-y-hidden hide-scrollbar px-6">
           {movies.map((movie,index)=>{
           return(
-               <div key={index}className="pt-3 h-[320px] relative flex-shrink-0">
+               <div key={index}className="pt-3 h-[400px] relative flex-shrink-0">
             <img 
             src={movie.url} 
             alt={`Trending movie ${movie.id}`}
-            className='w-[240px] h-[330px] object-cover rounded-4xl' />
+            className='w-[240px] h-[400px] object-cover rounded-4xl' />
         </div>
           )
         })}

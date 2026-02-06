@@ -2,7 +2,7 @@
     display: none;
 }
 .Movies {
-  margin-left: 100px;
+
   background: #0f0c16;
   color: white;
   padding-top: 5%;
@@ -20,4 +20,7 @@
 
 h5{
     padding-right: 30px;
+}
+h2{
+  margin-left: 30px;
 }
