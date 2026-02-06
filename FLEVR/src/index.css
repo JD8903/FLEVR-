@@ -1,6 +1,12 @@
+/* ===============================
+   TAILWIND + ICONS
+================================ */
 @import "tailwindcss";
 @import "remixicon/fonts/remixicon.css";
 
+/* ===============================
+   ROOT DEFAULTS (Vite default)
+================================ */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -8,7 +14,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #100d17;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,29 +22,60 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* ===============================
+   GLOBAL RESET (IMPORTANT)
+================================ */
+*{
+  box-sizing: border-box;
 }
 
-body {
+/* ===============================
+   BODY — 🔥 MAIN FIX HERE
+================================ */
+body{
   margin: 0;
-  display: flex;
-  place-items: center;
+  padding: 0;
+
   min-width: 320px;
   min-height: 100vh;
+
+  display: block;   /* 🔥 NEVER flex here */
+  background-color: #100d17;
+  color: white;
 }
 
-h1 {
+/* ===============================
+   ROOT WRAPPER
+================================ */
+#root{
+  width: 100%;
+}
+
+/* ===============================
+   LINKS
+================================ */
+a{
+  font-weight: 500;
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover{
+  opacity: 0.8;
+}
+
+/* ===============================
+   HEADINGS
+================================ */
+h1{
   font-size: 3.2em;
   line-height: 1.1;
 }
 
-button {
+/* ===============================
+   BUTTONS
+================================ */
+button{
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -49,23 +86,31 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
+
+button:hover{
   border-color: #646cff;
 }
+
 button:focus,
-button:focus-visible {
+button:focus-visible{
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
+/* ===============================
+   LIGHT MODE OVERRIDE (OPTIONAL)
+================================ */
+@media (prefers-color-scheme: light){
+  :root{
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
-    color: #747bff;
+
+  body{
+    background-color: #ffffff;
+    color: #213547;
   }
-  button {
+
+  button{
     background-color: #f9f9f9;
   }
 }

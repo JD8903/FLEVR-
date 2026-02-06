@@ -58,7 +58,7 @@ const SeriesPrev = () => {
         <div className="flex items-end gap-10 overflow-x-scroll overflow-y-hidden hide-scrollbar px-6">
           {movies.map((movie,index)=>{
           return(
-               <div key={index}className="pt-3 h-[320px] relative flex-shrink-0">
+               <div key={index}className="pt-3 h-[370px] relative flex-shrink-0">
             <img 
             src={movie.url} 
             alt={`Trending movie ${movie.id}`}

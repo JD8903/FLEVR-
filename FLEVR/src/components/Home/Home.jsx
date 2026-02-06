@@ -1,22 +1,20 @@
-import React from 'react'
-import Nav from "./Nav";
-import Slider from './Slider';
-import Trends from './Trends';
-import MoviesPrev from './MoviesPrev';
-import SeriesPrev from './SeriesPrev';
-import TvPrev from './TvPrev';
+import Trends from "./Trends";
+import SeriesPrev from "./SeriesPrev";
+import TvPrev from "./TvPrev";
+import MoviesPrev from "./MoviesPrev";
+import Pen from "./Pen";
 
 const Home = () => {
   return (
     <>
-    <Nav />
-    <Slider />
-    <Trends />
-    <MoviesPrev />
-    <SeriesPrev />
-    <TvPrev />
-    </>
-  )
-}
+     <Pen />
+     <Trends />
+     <TvPrev />
+     <SeriesPrev />
+     <MoviesPrev />
 
-export default Home
+    </>
+  );
+};
+
+export default Home;
