@@ -1,0 +1,95 @@
+.watch-section {
+    padding: 30px 40px;
+    background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+    color: white;
+  }
+  
+  .watch-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .watch-row {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  
+  .watch-row::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .watch-card {
+    position: relative;
+    min-width: 230px;
+    height: 320px;
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .watch-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  
+  .watch-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+  }
+  
+  .watch-card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .tag {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: linear-gradient(45deg, #ff0080, #ff5f6d);
+    color: white;
+    padding: 6px 10px;
+    font-size: 11px;
+    border-radius: 6px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.85), transparent 60%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .watch-card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay button {
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    border: none;
+    background: #e50914;
+    color: white;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .overlay button:hover {
+    background: #ff1f2d;
+  }
+  

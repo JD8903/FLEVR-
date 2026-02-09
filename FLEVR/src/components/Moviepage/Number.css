@@ -1,0 +1,146 @@
+.poster-section {
+  background: #0f0f0f;
+  padding: 30px 20px;
+  color: white;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.view-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* SLIDER */
+.slider-container {
+  position: relative;
+}
+
+.poster-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 50px 0;
+  scrollbar-width: none;
+}
+
+.poster-row::-webkit-scrollbar {
+  display: none;
+}
+
+/* CARD */
+.poster-card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 200px;
+  height: 300px;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+.poster-card:hover {
+  transform: scale(1.12);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.7);
+  z-index: 50;
+}
+
+.poster-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.poster-card:hover img {
+  transform: scale(1.15);
+}
+
+/* HOVER DETAILS */
+.hover-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px 16px 16px;
+  background: linear-gradient(to top, rgba(0,0,0,0.95), rgba(0,0,0,0.75), transparent);
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.4s ease;
+}
+
+.poster-card:hover .hover-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hover-info h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.meta {
+  font-size: 12px;
+  color: #bdbdbd;
+  margin-bottom: 6px;
+}
+
+.desc {
+  font-size: 12px;
+  color: #e0e0e0;
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+
+/* WATCH BUTTON */
+.buttons {
+  display: flex;
+}
+
+.watch {
+  width: 100%;
+  padding: 9px 0;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  background: white;
+  color: black;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.watch:hover {
+  background: #e50914;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* ARROWS */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 80px;
+  border-radius: 10px;
+  border: none;
+  font-size: 30px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow.left { left: -10px; }
+.arrow.right { right: -10px; }

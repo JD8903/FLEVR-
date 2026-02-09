@@ -1,0 +1,81 @@
+.reasons-section {
+    background: #000;
+    color: white;
+    padding: 100px 5%;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .reasons-title {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 70px;
+    background: linear-gradient(90deg, #ffffff, #ad0101);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Vertical layout */
+  .reasons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  /* 🔥 FULL WIDTH CARD */
+  .reason-card {
+    width: 100%;             /* full screen */
+    min-height: 190px;
+    padding: 40px 50px;
+    border-radius: 28px;
+    background: linear-gradient(160deg, #12142b, #1e0f46);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    position: relative;
+    transition: 0.35s;
+    text-align: left;
+    color: white;
+  }
+  
+  /* Glow border */
+  .reason-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 28px;
+    padding: 1px;
+    background: linear-gradient(120deg, #ff2e63, #6a00ff, #00f0ff);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.45;
+  }
+  
+  /* Hover */
+  .reason-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(255, 0, 120, 0.35);
+  }
+  
+  /* Text */
+  .reason-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  
+  .reason-card p {
+    font-size: 15px;
+    color: #d1d1ff;
+    line-height: 1.7;
+    max-width: 60%;
+  }
+  
+  /* Icon */
+  .reason-icon {
+    position: absolute;
+    right: 40px;
+    bottom: 35px;
+    font-size: 44px;
+    color: #ff2e63;
+  }
+  

@@ -1,0 +1,148 @@
+/* ================= GLOBAL ================= */
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* ================= SECTION BACKGROUND ================= */
+  .trends {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 80px 0;
+    background:
+      radial-gradient(circle at 30% 40%, rgba(255,80,0,0.15), transparent 40%),
+      radial-gradient(circle at 70% 60%, rgba(0,150,255,0.12), transparent 40%),
+      linear-gradient(180deg, #0b0b0b, #000);
+    color: white;
+  }
+  
+  /* ================= HEADING ================= */
+  .trends-heading {
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0 0 60px 100px;
+  }
+  
+  /* ================= ROW SPACING ================= */
+  .top10-container {
+    display: flex;
+    gap: 90px;
+    padding: 0 150px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .top10-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* ================= CARD ================= */
+  .top-card {
+    position: relative;
+    min-width: 260px;
+    height: 360px;
+    flex-shrink: 0;
+    overflow: visible;
+    transition: 0.4s ease;
+    perspective: 1000px;
+    opacity: 0.6;
+  }
+  
+  .top-card:hover {
+    opacity: 1;
+    z-index: 5;
+  }
+  
+  /* ================= POSTER WRAPPER ================= */
+  .poster-wrapper {
+    width: 260px;
+    height: 360px;
+    border-radius: 22px;
+    overflow: hidden;
+    position: relative;
+  
+    box-shadow:
+      0 20px 40px rgba(0,0,0,0.7),
+      0 0 25px rgba(255,255,255,0.1);
+  
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  /* Poster image */
+  .poster-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* 3D lift + tilt */
+  .top-card:hover .poster-wrapper {
+    transform: translateY(-18px) scale(1.07) rotateY(-6deg);
+    box-shadow:
+      0 35px 70px rgba(0,0,0,0.85),
+      0 0 50px rgba(255,255,255,0.25);
+  }
+  
+  /* Glow halo behind */
+  .poster-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: -10px;
+    border-radius: 28px;
+    background: radial-gradient(circle, rgba(255,255,255,0.15), transparent 70%);
+    z-index: -1;
+    opacity: 0;
+    transition: 0.4s;
+  }
+  
+  .top-card:hover .poster-wrapper::before {
+    opacity: 1;
+  }
+  
+  /* ================= NETFLIX RANK NUMBER ================= */
+  .big-number {
+    position: absolute;
+    left: -75px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 260px;
+    font-weight: 900;
+    z-index: 1;
+    color: transparent;
+    -webkit-text-stroke: 3px #ffffff;
+    opacity: 0.9;
+    pointer-events: none;
+  }
+  
+  /* ================= MOBILE ================= */
+  @media (max-width: 768px) {
+    .trends-heading {
+      margin-left: 20px;
+      font-size: 26px;
+    }
+  
+    .top10-container {
+      padding: 0 20px;
+      gap: 35px;
+    }
+  
+    .top-card {
+      min-width: 170px;
+      height: 240px;
+    }
+  
+    .poster-wrapper {
+      width: 170px;
+      height: 240px;
+    }
+  
+    .big-number {
+      font-size: 120px;
+      left: -20px;
+    }
+  }
+  

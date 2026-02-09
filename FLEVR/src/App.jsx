@@ -1,13 +1,7 @@
+import Webseries from "./components/Webseries/Webseries";
 
-import Login from "./components/Login/Form";
-
-
-const App = () => {
-  return (
-    <>
-    <Login />
-    </>
-  );
-};
+function App() {
+  return <Webseries />;
+}
 
 export default App;

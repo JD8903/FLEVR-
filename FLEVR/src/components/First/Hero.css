@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+    url("F:\flevr\FLEVR\src\assets\pic.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+}
+
+/* TOP BAR */
+.top-bar {
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.lang {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.signin {
+  background: #e50914;
+  border: none;
+  padding: 5px 18px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+/* CENTER */
+.hero-content {
+  height: 150%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+.hero-content p {
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+
+/* EMAIL INPUT */
+.email-box {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.email-box input {
+  width: 500px;
+  padding: 14px;
+  font-size: px;
+  border: none;
+  outline: none;
+}
+
+.email-box button {
+  background: #e50914;
+  border: none;
+  padding: 0 22px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.phone-link {
+  font-size: 14px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.phone-link:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .email-box {
+    flex-direction: column;
+    width: 120%;
+  }
+
+  .email-box input,
+  .email-box button {
+    width: 130%;
+  }
+
+  .email-box button {
+    margin-top: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+}
