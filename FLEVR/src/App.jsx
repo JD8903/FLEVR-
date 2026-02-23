@@ -1,23 +1,7 @@
-import Settings from "./Settings/Settings";
-import Company from "./Pages/company";
-import About from "./Pages/About";
-import Help from "./Pages/Help";
-import HelpCenter from "./Pages/HelpCenter";
-import Privacy from "./pages/Privacy";
-import Terms from "./pages/Terms";
-import Language from "./Pages/Language";
-import HelpSettings from "./pages/HelpSettings";
+import Webseries from "./components/Webseries/Webseries";
 
 function App() {
-  return <Settings />;
-  // return <Company />;
-  // return <About />;
-  // return <Help />;
-  // return <HelpCenter />;
-  // return <Privacy />;
-  // return <Terms />;
-  // return <Language />;
-  // return <HelpSettings />;
+  return <Webseries />;
 }
 
 export default App;

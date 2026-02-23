@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    background: #0b0a14;
+    padding-top: 250px; /* navbar + search */
+}
+
+.page{
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.section h2{
+    color: white;
+    margin-bottom: 16px;
+}
+
+
+.section{
+    padding: 20px 40px;
+}
+
+.section h2{
+    color: white;
+    margin-bottom: 16px;
+    font-size: 27px;
+}
+
+/* GRID */
+.grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+.card{
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+.card:hover{
+    transform: scale(1.08);
+    z-index: 5;
+}
+@media (max-width: 768px){
+    .card img{
+        height: 220px;
+    }
+}

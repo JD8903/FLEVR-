@@ -1,0 +1,40 @@
+ 
+header{
+    position: absolute;          
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 1140px;
+    max-width: 90%;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: transparent;
+    z-index: 10;
+    cursor: pointer;                 
+}
+
+/* nav links */
+header a{
+    margin-right: 60px;
+    color: #fffbfb;
+    text-decoration: none;
+}
+
+/* search icon */
+.search-iconn{
+    color: white;
+}
+
+/* user badge */
+.USER{
+    margin-left: auto;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.08);
+    font-size: 12px;
+    cursor: pointer;
+}
