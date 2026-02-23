@@ -1,0 +1,74 @@
+.page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0c0f10, #111);
+  color: #eaeaea;
+  padding: 90px 120px 60px;
+}
+
+/* Title */
+.page-title {
+  font-size: 44px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Intro text */
+.page-intro {
+  font-size: 18px;
+  line-height: 1.9;
+  max-width: 900px;
+  color: #cfd8dc;
+  margin-bottom: 50px;
+}
+
+/* Content blocks */
+.content-block {
+  max-width: 900px;
+  margin-bottom: 45px;
+  padding: 28px;
+  border-radius: 16px;
+  background: #15191b;
+  border: 1px solid #2a2f33;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect (subtle, premium) */
+.content-block:hover {
+  background: #1a2023;
+  border-color: #6fa8b6;
+  box-shadow: 0 10px 30px rgba(111, 168, 182, 0.15);
+}
+
+/* Block headings */
+.content-block h2 {
+  margin-bottom: 14px;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+/* Paragraphs */
+.content-block p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #cfcfcf;
+}
+
+/* Feature list */
+.feature-list {
+  padding-left: 20px;
+}
+
+.feature-list li {
+  margin-bottom: 10px;
+  color: #cfd8dc;
+}
+
+/* Highlight block */
+.content-block.highlight {
+  background: linear-gradient(
+    135deg,
+    #1c2b30,
+    #203a40
+  );
+  border-color: #7fa3ad;
+}
