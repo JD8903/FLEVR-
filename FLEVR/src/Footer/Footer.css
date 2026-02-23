@@ -1,0 +1,116 @@
+.footer {
+  width: 100%;
+  padding-top: 40px;
+  margin-top: 60px;
+  border-top: 1px solid #ff0000;
+  display: flex;
+  justify-content: center; 
+  background: linear-gradient(180deg, #0c0f10, #111);/* 👈 center whole footer */
+}
+
+/* Titles & Links */
+.footer-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-link {
+  font-size: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;  /* equal vertical spacing */
+}
+
+
+/* Hover effect */
+.footer-title:hover,
+.footer-link:hover {
+  color: #ff4d4d;
+  text-decoration: underline;
+}
+
+.footer-grid {
+  width: 100%;
+  max-width: 1200px;   /* 👈 desktop control */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 80px;    /* 👈 balanced gap */
+  row-gap: 50px;
+}
+
+/* Footer items */
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-item.center {
+  align-items: center;
+  text-align: center;
+}
+
+.footer-item.right {
+  align-items: flex-end;
+  text-align: right;
+}
+
+/* Language select */
+.language-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #222;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  gap: 18px;
+}
+
+.social-icons span {
+  font-size: 22px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.social-icons .icon {
+  cursor: pointer;
+  color: #ffffff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons .icon:hover {
+  transform: scale(1.15);
+}
+
+/* Individual hover colors */
+.social-icons .fb:hover {
+  color: #1877f2;
+}
+
+.social-icons .ig:hover {
+  color: #ff29cd;
+}
+
+.social-icons .tw:hover {
+  color: #1da1f2;
+}
+
+/* Copyright */
+.copyright {
+  align-self: flex-end;
+  margin-top: auto;
+  color: #aaa;
+}
